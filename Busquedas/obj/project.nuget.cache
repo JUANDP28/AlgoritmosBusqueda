@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "A//o0CU+P2lnLu7koMyGzPwp8e281CwD+ITkQ3GwDP/qE5r/jcvlmNafPb4bgh+ffAQ687P/JSv+siX2dkVk2A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\juanc\\source\\repos\\Busquedas\\Busquedas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\juanc\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\juanc\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\juanc\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\juanc\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,13 @@
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.exe
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.csprojAssemblyReference.cache
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.AssemblyInfoInputs.cache
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.AssemblyInfo.cs
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.deps.json
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.runtimeconfig.json
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.runtimeconfig.dev.json
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.dll
+C:\Users\juanc\source\repos\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.pdb
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.csproj.CoreCompileInputs.cache
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.dll
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.pdb
+C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.genruntimeconfig.cache
