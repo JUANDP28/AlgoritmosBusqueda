@@ -11,3 +11,16 @@ C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.csproj.C
 C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.dll
 C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.pdb
 C:\Users\juanc\source\repos\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.genruntimeconfig.cache
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.exe
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.deps.json
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.runtimeconfig.json
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.runtimeconfig.dev.json
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.dll
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\bin\Debug\netcoreapp3.1\Busquedas.pdb
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.csprojAssemblyReference.cache
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.csproj.CoreCompileInputs.cache
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.AssemblyInfoInputs.cache
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.AssemblyInfo.cs
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.dll
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.pdb
+C:\Users\juanc\Documents\GitHub\AlgoritmosBusqueda\Busquedas\obj\Debug\netcoreapp3.1\Busquedas.genruntimeconfig.cache

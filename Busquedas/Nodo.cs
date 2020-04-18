@@ -5,15 +5,21 @@ namespace Busquedas {
     public class Nodo {
 
         private String ciudad;
+        private int costo;
         List<Nodo> rutas = new List<Nodo>();
 
-        public Nodo (String ciudad) {
+        public Nodo (String ciudad, int costo) {
             this.ciudad = ciudad;
+            this.costo = costo;
         }
         
 
         public String getCiudad () {
             return this.ciudad;
+        }
+
+        public int getCosto () {
+            return this.costo;
         }
 
         public void insertarCiudad(Nodo nuevaCiudad) {

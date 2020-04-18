@@ -6,7 +6,7 @@ namespace Busquedas {
         private Nodo raiz;
 
         public Arbol (String ciudad) {
-            this.raiz = new Nodo(ciudad);
+            this.raiz = new Nodo(ciudad, 0);
         }
 
         public Nodo getRaiz () {

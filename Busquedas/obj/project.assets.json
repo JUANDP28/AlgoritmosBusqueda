@@ -247,11 +247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanc\\source\\repos\\Busquedas\\Busquedas.csproj",
+      "projectUniqueName": "C:\\Users\\juanc\\Documents\\GitHub\\AlgoritmosBusqueda\\Busquedas\\Busquedas.csproj",
       "projectName": "Busquedas",
-      "projectPath": "C:\\Users\\juanc\\source\\repos\\Busquedas\\Busquedas.csproj",
+      "projectPath": "C:\\Users\\juanc\\Documents\\GitHub\\AlgoritmosBusqueda\\Busquedas\\Busquedas.csproj",
       "packagesPath": "C:\\Users\\juanc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanc\\source\\repos\\Busquedas\\obj\\",
+      "outputPath": "C:\\Users\\juanc\\Documents\\GitHub\\AlgoritmosBusqueda\\Busquedas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\juanc\\AppData\\Roaming\\NuGet\\NuGet.Config",
