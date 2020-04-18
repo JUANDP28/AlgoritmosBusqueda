@@ -4,12 +4,18 @@ using System.Collections.Generic;
 namespace Busquedas {
     class Program {
 
+        /// <summary>
+        /// Variables globales para la recursión
+        /// </summary>
         List<Ruta> rutas = new List<Ruta>();
         List<String> memoria = new List<string>();
         List<String> rutaMenorCosto = new List<string>();
         int costoMenorVariable = 0;
 
-        public void crearRutas () {
+        /// <summary>
+        /// Metodo que crea el Directorio de rutas y costos
+        /// </summary>
+        public void CrearRutas () {
             rutas.Add(new Ruta { salida = "Oradea", destino = "Zerind", costo = 71 });
             rutas.Add(new Ruta { salida = "Oradea", destino = "Sibiu", costo = 151 });
             rutas.Add(new Ruta { salida = "Zerind", destino = "Oradea", costo = 71 });
@@ -58,39 +64,53 @@ namespace Busquedas {
             rutas.Add(new Ruta { salida = "Neamt", destino = "Iasi", costo = 87 });
         }
 
+        /// <summary>
+        /// Struct para crear el Directorio con la información
+        /// </summary>
         struct Ruta {
             public String salida { get; set; }
             public String destino { get; set; }
             public int costo { get; set; }
         }
 
-        public void crearArbol (Nodo ciudad) {
-            memoria.Add(ciudad.getCiudad());
+        /// <summary>
+        /// Metodo para crear el arbol n-ario
+        /// </summary>
+        /// <param name="ciudad"> Nodo de inicio,
+        /// con esto empieza la creación del arbol</param>
+        public void CrearArbol (Nodo ciudad) {
+            memoria.Add(ciudad.GetCiudad());
 
             foreach (Ruta ruta in rutas) {
 
-                if (ruta.salida.Equals(ciudad.getCiudad())) {
+                if (ruta.salida.Equals(ciudad.GetCiudad())) {
 
                     if (!memoria.Contains(ruta.destino)) {
 
-                        ciudad.insertarCiudad(new Nodo(ruta.destino, ruta.costo));
+                        ciudad.InsertarCiudad(new Nodo(ruta.destino, ruta.costo));
                     }
                 }
             }
 
-            for (int i = 0; i< ciudad.numeroRutas(); i++) {
+            for (int i = 0; i< ciudad.NumeroRutas(); i++) {
 
-                if (ciudad.rutaHija(i+1) != null) {
+                if (ciudad.RutaHija(i+1) != null) {
 
-                    crearArbol(ciudad.rutaHija(i+1));
+                    CrearArbol(ciudad.RutaHija(i+1));
                 }
             }
 
-            memoria.Remove(ciudad.getCiudad());
+            memoria.Remove(ciudad.GetCiudad());
         }
 
-        public void rutasAmplitud (Nodo ciudad, String destinoFinal) {
-            memoria.Add(ciudad.getCiudad());
+        /// <summary>
+        /// Metodo para buscar todas las rutas posibles de a ciudad de
+        /// salida a la ciudad de destino
+        /// </summary>
+        /// <param name="ciudad">ciudad de salida de tipo Nodo</param>
+        /// <param name="destinoFinal">ciudad de destino de tipos String</param>
+        public void RutasAmplitud (Nodo ciudad, String destinoFinal) {
+            memoria.Add(ciudad.GetCiudad());
 
             if (memoria.Contains(destinoFinal)) {
 
@@ -109,20 +129,27 @@ namespace Busquedas {
                 return;
             }
 
-            for (int i = 0; i < ciudad.numeroRutas(); i++) {
+            for (int i = 0; i < ciudad.NumeroRutas(); i++) {
 
-                if (ciudad.rutaHija(i+1) != null) {
+                if (ciudad.RutaHija(i+1) != null) {
 
-                    rutasAmplitud(ciudad.rutaHija(i+1), destinoFinal);
+                    RutasAmplitud(ciudad.RutaHija(i+1), destinoFinal);
                 }
             }
 
-            memoria.Remove(ciudad.getCiudad());
+            memoria.Remove(ciudad.GetCiudad());
         }
 
-        public int busquedaCostoUniforme (Nodo ciudad, String destinoFinal,
+        /// <summary>
+        /// Metodo que aplica la Busqueda de Costo Uniforme
+        /// </summary>
+        /// <param name="ciudad">ciudad de salida de tipos Nodo</param>
+        /// <param name="destinoFinal">ciudad de destino de tipo String</param>
+        /// <param name="costoMenor">valor de tipo int que almacena el menor costo</param>
+        /// <returns></returns>
+        public int BusquedaCostoUniforme (Nodo ciudad, String destinoFinal,
             int costoMenor) {
-            memoria.Add(ciudad.getCiudad());
+            memoria.Add(ciudad.GetCiudad());
 
             if (memoria.Contains(destinoFinal)) {
 
@@ -148,13 +175,13 @@ namespace Busquedas {
                 }
             }
 
-            for (int i = 0; i < ciudad.numeroRutas(); i++) {
+            for (int i = 0; i < ciudad.NumeroRutas(); i++) {
 
-                if (ciudad.rutaHija(i + 1) != null) {
+                if (ciudad.RutaHija(i + 1) != null) {
 
-                    costoMenorVariable += ciudad.rutaHija(i + 1).getCosto();
+                    costoMenorVariable += ciudad.RutaHija(i + 1).GetCosto();
 
-                    costoMenor = busquedaCostoUniforme(ciudad.rutaHija(i + 1), 
+                    costoMenor = BusquedaCostoUniforme(ciudad.RutaHija(i + 1), 
                         destinoFinal, costoMenor);
                 }
             }
@@ -173,26 +200,46 @@ namespace Busquedas {
                 Console.WriteLine("===================================");
             }
 
-            costoMenorVariable -= ciudad.getCosto();
-            memoria.Remove(ciudad.getCiudad());
+            costoMenorVariable -= ciudad.GetCosto();
+            memoria.Remove(ciudad.GetCiudad());
             return costoMenor;
         }
 
+        /// <summary>
+        /// Metodo que inicializa el algoritmo
+        /// </summary>
+        /// <param name="args"></param>
         static void Main (string [] args) {
+            Console.WriteLine("=============== CIUDADES ==============");
+            Console.WriteLine("1) Oradea            11) Zerind");
+            Console.WriteLine("2) Arad              12) Sibiu");
+            Console.WriteLine("3) Timisoara         13) Bucarest");
+            Console.WriteLine("4) Lugoj             14) Giurgiu");
+            Console.WriteLine("5) Mehadia           15) Urziceni");
+            Console.WriteLine("6) Dobreta           16) Hirsova");
+            Console.WriteLine("7) Craiova           17) Efoire");
+            Console.WriteLine("8) Rimnicu Vilcea    18) Vaslui");
+            Console.WriteLine("9) Pitesti           19) Iasi");
+            Console.WriteLine("10) Fagaras          20) Neamt");
+            Console.WriteLine("");
+
             Console.WriteLine("INTRODUSCA LA CIUDAD DE SALIDA: ");
             String salida = Console.ReadLine();
             Arbol arbol = new Arbol(salida);
+
             Program menu = new Program();
-            menu.crearRutas();
-            menu.crearArbol(arbol.getRaiz());
+            menu.CrearRutas();
+            menu.CrearArbol(arbol.GetRaiz());
             Console.WriteLine("=============== SE CREO EL ARBOL ===============");
             menu.memoria.Clear();
+
             Console.WriteLine("INTRODUSCA LA CIUDAD DE DESTINO: ");
             String destino = Console.ReadLine();
-            menu.rutasAmplitud(arbol.getRaiz(), destino);
+            menu.RutasAmplitud(arbol.GetRaiz(), destino);
+
             Console.WriteLine("");
             Console.WriteLine("ESTA ES LA RUTA CON EL MENOR COSTO");
-            menu.busquedaCostoUniforme(arbol.getRaiz(), destino, 0);
+            menu.BusquedaCostoUniforme(arbol.GetRaiz(), destino, 0);
         }
     }
 }
